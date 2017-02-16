@@ -15,5 +15,5 @@ Open index.html, by clicking "Load weather data" to display wind sounds
 4. Temperature: A FM synthesis is used to represent the temperature, current temperature controls the pitch of the wave.
 
 </content>
-  <tabTrigger>readme</tabTrigger>
+  
 </snippet>
