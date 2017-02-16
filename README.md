@@ -1,6 +1,5 @@
 <snippet>
   <content><![CDATA[
-
 # ${1:Sound of Skype}
 A 3D Audio Solution for Sonifying Weather Data
 ## HW #3 - Proof of Concepts & User Survey
