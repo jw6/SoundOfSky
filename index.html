@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+    <script src="soundofsky.js" type="text/javascript"></script>
+</head>
 
 <body>
     <h2>
@@ -11,25 +13,104 @@
         Using Weather Underground API
     </p>
 
-    <script defer src="soundofsky.js"></script>
 
-    <button type="button" onclick="httpRequest()">
+    <audio id = 'windSound'>
+        <source id = "wind" src="">
+    </audio>
+
+<script>
+    function playsound0(){
+        document.getElementById("wind").src = "SE/wind0.mp3";
+        document.getElementById("windSound").load();
+        var windSound = document.getElementById("windSound");
+        windSound.play()
+    }
+
+    function playsound1(){
+        document.getElementById("wind").src = "SE/wind1.mp3";
+        document.getElementById("windSound").load();
+        var windSound = document.getElementById("windSound");
+        windSound.play()
+    }
+
+    function playsound2(){
+        document.getElementById("wind").src = "SE/wind2.mp3";
+        document.getElementById("windSound").load();
+        var windSound = document.getElementById("windSound");
+        windSound.play()
+    }
+
+    function playsound3(){
+        document.getElementById("wind").src = "SE/wind3.mp3";
+        document.getElementById("windSound").load();
+        var windSound = document.getElementById("windSound");
+        windSound.play()
+    }
+
+    function playsound4(){
+        document.getElementById("wind").src = "SE/wind4.mp3";
+        document.getElementById("windSound").load();
+        var windSound = document.getElementById("windSound");
+        windSound.play()
+    }
+
+    function playsound5(){
+        document.getElementById("wind").src = "SE/wind5.mp3";
+        document.getElementById("windSound").load();
+        var windSound = document.getElementById("windSound");
+        windSound.play()
+    }
+
+    function playsound6(){
+        document.getElementById("wind").src = "SE/wind6.mp3";
+        document.getElementById("windSound").load();
+        var windSound = document.getElementById("windSound");
+        windSound.play()
+    }
+</script>
+    <div id = "LoadData">
+    <button type="button0" onclick="httpRequest()">
         Load weather data
     </button>
 
-    <h4 id="day1"></h4>
-    <p id="temp1"></p>
-    <h4 id="day2"></h4>
-    <p id="temp2"></p>
-    <h4 id="day3"></h4>
-    <p id="temp3"></p>
-    <h4 id="day4"></h4>
-    <p id="temp4"></p>
-    <h4 id="day5"></h4>
-    <p id="temp5"></p>
-    <h4 id="day6"></h4>
-    <p id="temp6"></p>
-    <h4 id="day7"></h4>
-    <p id="temp7"></p>
+
+    </div>
+
+    <div id = "DataList">
+        <button type='button1' onclick='showLoadForm();'>Back </button>
+        <br/>
+
+        <button id='day1' onclick='playsound0();'> </button>
+    <p id="tag1"></p>
+    <p id="tag1a"></p>
+
+        <button id='day2' onclick='playsound1();'> </button>
+    <p id="tag2"></p>
+    <p id="tag2a"></p>
+
+        <button id='day3' onclick='playsound2();'> </button>
+    <p id="tag3"></p>
+    <p id="tag3a"></p>
+
+        <button id='day4' onclick='playsound3();'> </button>
+    <p id="tag4"></p>
+    <p id="tag4a"></p>
+
+        <button id='day5' onclick='playsound4();'> </button>
+    <p id="tag5"></p>
+    <p id="tag5a"></p>
+
+        <button id='day6' onclick='playsound5();'> </button>
+    <p id="tag6"></p>
+    <p id="tag6a"></p>
+
+        <button id='day7' onclick='playsound6();'> </button>
+    <p id="tag7"></p>
+    <p id="tag7a"></p>
+
+    </div>
+    <script type = "text/javascript">
+        showLoadForm();
+    </script>
 </body>
 </html>

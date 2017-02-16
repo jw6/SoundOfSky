@@ -9,27 +9,54 @@ function httpRequest() {
   xmlHttp.send(null);
 }
 
+
+
+
+
 function ProcessRequest() {
+    /*document.getElementById("DataList").innerHTML = "<button type='button1' onclick='showLoadForm();'>Back </button>";*/
   if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+
     if (xmlHttp.responseText == "Not found") {
       day1.innerHTML = "Error - Not found";
     } else {
       var obj = JSON.parse(xmlHttp.responseText);
 
       day1.innerHTML = obj.forecast.simpleforecast.forecastday[0].date.weekday;
-      temp1.innerHTML = "High temp: " + obj.forecast.simpleforecast.forecastday[0].high.fahrenheit;
+      tag1.innerHTML = "Wind speed: " + obj.forecast.simpleforecast.forecastday[0].avewind.mph; + "mph";
+      tag1a.innerHTML = "Wind direction: " + obj.forecast.simpleforecast.forecastday[0].avewind.dir;
+
       day2.innerHTML = obj.forecast.simpleforecast.forecastday[1].date.weekday;
-      temp2.innerHTML = "High temp: " + obj.forecast.simpleforecast.forecastday[1].high.fahrenheit;
+      tag2.innerHTML = "Wind speed: " + obj.forecast.simpleforecast.forecastday[1].avewind.mph; + "mph";
+      tag2a.innerHTML = "Wind direction: " + obj.forecast.simpleforecast.forecastday[1].avewind.dir;
+
       day3.innerHTML = obj.forecast.simpleforecast.forecastday[2].date.weekday;
-      temp3.innerHTML = "High temp: " + obj.forecast.simpleforecast.forecastday[2].high.fahrenheit;
+      tag3.innerHTML = "Wind speed: " + obj.forecast.simpleforecast.forecastday[2].avewind.mph; + "mph";
+      tag3a.innerHTML = "Wind direction: " + obj.forecast.simpleforecast.forecastday[2].avewind.dir;
+
       day4.innerHTML = obj.forecast.simpleforecast.forecastday[3].date.weekday;
-      temp4.innerHTML = "High temp: " + obj.forecast.simpleforecast.forecastday[3].high.fahrenheit;
+      tag4.innerHTML = "Wind speed: " + obj.forecast.simpleforecast.forecastday[3].avewind.mph; + "mph";
+      tag4a.innerHTML = "Wind direction: " + obj.forecast.simpleforecast.forecastday[3].avewind.dir;
+
       day5.innerHTML = obj.forecast.simpleforecast.forecastday[4].date.weekday;
-      temp5.innerHTML = "High temp: " + obj.forecast.simpleforecast.forecastday[4].high.fahrenheit;
+      tag5.innerHTML = "Wind speed: " + obj.forecast.simpleforecast.forecastday[4].avewind.mph; + "mph";
+      tag5a.innerHTML = "Wind direction: " + obj.forecast.simpleforecast.forecastday[4].avewind.dir;
+
       day6.innerHTML = obj.forecast.simpleforecast.forecastday[5].date.weekday;
-      temp6.innerHTML = "High temp: " + obj.forecast.simpleforecast.forecastday[5].high.fahrenheit;
+      tag6.innerHTML = "Wind speed: " + obj.forecast.simpleforecast.forecastday[5].avewind.mph; + "mph";
+      tag6a.innerHTML = "Wind direction: " + obj.forecast.simpleforecast.forecastday[5].avewind.dir;
+
       day7.innerHTML = obj.forecast.simpleforecast.forecastday[6].date.weekday;
-      temp7.innerHTML = "High temp: " + obj.forecast.simpleforecast.forecastday[6].high.fahrenheit;
+      tag7.innerHTML = "Wind speed: " + obj.forecast.simpleforecast.forecastday[6].avewind.mph; + "mph";
+      tag7a.innerHTML = "Wind direction: " + obj.forecast.simpleforecast.forecastday[6].avewind.dir;
     }
   }
+    document.getElementById("LoadData").style.display = "none";
+    document.getElementById("DataList").style.display = "block";
+
+}
+
+function showLoadForm() {
+    document.getElementById("LoadData").style.display = "block";
+    document.getElementById("DataList").style.display = "none";
 }
