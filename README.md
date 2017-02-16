@@ -1,6 +1,6 @@
 <snippet>
-  <content><![CDATA[
-# ${1:Sound of Skype}
+  <content>
+# Sound of Skype
 A 3D Audio Solution for Sonifying Weather Data
 ## HW #3 - Proof of Concepts & User Survey
 Part I: Sonifying weather data into sounds to represent different weather metrics
@@ -14,6 +14,6 @@ Open index.html, by clicking "Load weather data" to display wind sounds
 3. Humidity: Using a pulse wave to determine the humidity, if humidity is high, then a thin and rapsy tone will be displayed, else if humidity is low, a rich tone will be displayed.
 4. Temperature: A FM synthesis is used to represent the temperature, current temperature controls the pitch of the wave.
 
-]]></content>
+</content>
   <tabTrigger>readme</tabTrigger>
 </snippet>
