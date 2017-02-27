@@ -9,7 +9,54 @@ function httpRequest() {
   xmlHttp.send(null);
 }
 
+function playsound0(){
+        document.getElementById("wind").src = "SE/wind0.mp3";
+        document.getElementById("windSound").load();
+        var windSound = document.getElementById("windSound");
+        windSound.play()
+    }
 
+    function playsound1(){
+        document.getElementById("wind").src = "SE/wind1.mp3";
+        document.getElementById("windSound").load();
+        var windSound = document.getElementById("windSound");
+        windSound.play()
+    }
+
+    function playsound2(){
+        document.getElementById("wind").src = "SE/wind2.mp3";
+        document.getElementById("windSound").load();
+        var windSound = document.getElementById("windSound");
+        windSound.play()
+    }
+
+    function playsound3(){
+        document.getElementById("wind").src = "SE/wind3.mp3";
+        document.getElementById("windSound").load();
+        var windSound = document.getElementById("windSound");
+        windSound.play()
+    }
+
+    function playsound4(){
+        document.getElementById("wind").src = "SE/wind4.mp3";
+        document.getElementById("windSound").load();
+        var windSound = document.getElementById("windSound");
+        windSound.play()
+    }
+
+    function playsound5(){
+        document.getElementById("wind").src = "SE/wind5.mp3";
+        document.getElementById("windSound").load();
+        var windSound = document.getElementById("windSound");
+        windSound.play()
+    }
+
+    function playsound6(){
+        document.getElementById("wind").src = "SE/wind6.mp3";
+        document.getElementById("windSound").load();
+        var windSound = document.getElementById("windSound");
+        windSound.play()
+    }
 
 
 
