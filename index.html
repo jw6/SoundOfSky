@@ -22,46 +22,49 @@
         <audio id = 'windSound'>
             <source id = "wind" src="">
         </audio>
+        <audio id='tempSound'>
+            <source id='temp' src="SE/oldmacdonald.mp3">
+        </audio>
 
         <div id = "LoadData">
-        <button type="button0" onclick="httpRequest()">
+        <button type="button0" class="button" onclick="httpRequest()">
             Load weather data
         </button>
 
 
         </div>
 
-        <div id = "DataList">
-            <button type='button1' onclick='showLoadForm();'>Back </button>
+        <div id = "DataList" class="data">
+            <button type='button1' class="button" onclick='httpRequest()'>Reload weather data </button>
             <br/>
 
-            <button id='day1' onclick='playsound0();'> </button>
-        <p id="tag1"></p>
-        <p id="tag1a"></p>
+            <p id='date1' class="date"></p>
+            <p id='weather1'></p>
+            <button id='day1' class="button" onclick='playsound0();'> </button>
 
-            <button id='day2' onclick='playsound1();'> </button>
-        <p id="tag2"></p>
-        <p id="tag2a"></p>
+            <p id='date2' class="date"></p>
+            <p id='weather2'></p>
+            <button id='day2' class="button" onclick='playsound1();'> </button>
 
-            <button id='day3' onclick='playsound2();'> </button>
-        <p id="tag3"></p>
-        <p id="tag3a"></p>
+            <p id='date3' class="date"></p>
+            <p id='weather3'></p>
+            <button id='day3' class="button" onclick='playsound2();'> </button>
 
-            <button id='day4' onclick='playsound3();'> </button>
-        <p id="tag4"></p>
-        <p id="tag4a"></p>
+            <p id='date4' class="date"></p>
+            <p id='weather4'></p>
+            <button id='day4' class="button" onclick='playsound3();'> </button>
 
-            <button id='day5' onclick='playsound4();'> </button>
-        <p id="tag5"></p>
-        <p id="tag5a"></p>
+            <p id='date5' class="date"></p>
+            <p id='weather5'></p>
+            <button id='day5' class="button" onclick='playsound4();'> </button>
 
-            <button id='day6' onclick='playsound5();'> </button>
-        <p id="tag6"></p>
-        <p id="tag6a"></p>
+            <p id='date6' class="date"></p>
+            <p id='weather6'></p>
+            <button id='day6' class="button" onclick='playsound5();'> </button>
 
-            <button id='day7' onclick='playsound6();'> </button>
-        <p id="tag7"></p>
-        <p id="tag7a"></p>
+            <p id='date7' class="date"></p>
+            <p id='weather7'></p>
+            <button id='day7' class="button" onclick='playsound6();'> </button>
 
         </div>
         <script type = "text/javascript">
